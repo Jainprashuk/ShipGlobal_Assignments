@@ -91,32 +91,21 @@ https://jainprashuk.github.io/ShipGlobal_Assignments/NumberGuess/
 - `word_scramble.js`
 
 ### Demo
-[Live Demo](#) *(Replace with actual link)*
+https://jainprashuk.github.io/ShipGlobal_Assignments/WordScramble/
 
 ## How to Run
 
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/shipglobal-frontend-assessment.git
+    git clone https://github.com/Jainprashuk/ShipGlobal_Assignments
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd shipglobal-frontend-assessment
+    cd ShipGlobal_Assignments
     ```
 
 3. Open the desired HTML file in your web browser to see the corresponding component.
 
-## Submission
-
-1. Ensure all functionality, styling, and documentation are complete.
-2. Host a working demo of each component online or provide as local video files.
-3. Submit the repository URL and demo links via the submission form: [Submission URL](https://forms.gle/dSHRpW4zwFE4Wa8u7)
-
-**Note**: Make sure your code is well-commented and follows best practices. Ensure compliance with all project guidelines and rules.
-
----
-
-Feel free to adjust the content, especially the demo links and any specific details, to match your actual implementations.
