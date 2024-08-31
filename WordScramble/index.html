@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ShipGlobal</div>
+        <div class="assignment">Assignment 4</div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Assignment 5</h1>
+            <p>Develop an interactive word scramble game where users are given a scrambled
+                version of a word and must unscramble it to reveal the correct word. The game should
+                provide feedback on user attempts, track the number of attempts, and offer a way to restart
+                the game. This component should be built using HTML, CSS, and JavaScript.</p>
+        </aside>
+        <main class="main-content">
+            <div class="game-container">
+                <h1>Word Scramble Game</h1>
+                <div id="game">
+                    <p id="scrambled-word">__ __ __ __ __</p>
+                    <p id="hint">Hint: <span id="hint-text"></span></p>
+                    <input type="text" id="user-input" placeholder="Enter your guess">
+                    <button id="submit-btn">Submit Guess</button>
+                    <button id="new-word-btn">New Word</button>
+                    <p id="feedback"></p>
+                    <p id="attempts">Attempts: 0</p>
+                    <p id="timer">Time Left: 30s</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

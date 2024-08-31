@@ -150,3 +150,47 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .game-container {
+        margin: 0; /* Remove margin on small screens */
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .assignment {
+        font-size: 18px;
+    }
+
+    .game-container {
+        padding: 15px;
+    }
+
+    input[type="number"], button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #feedback, #attempts {
+        font-size: 16px;
+    }
+}
+
