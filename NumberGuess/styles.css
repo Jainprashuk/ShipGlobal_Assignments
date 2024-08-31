@@ -1,0 +1,183 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f4f8; /* Soft background color */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #6a1b9a, #8e24aa); /* Updated gradient */
+    color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.assignment {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.header .assignment::before {
+    content: "📚";
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background: #2c3e50; /* Darker sidebar color */
+    color: #ecf0f1; /* Light text color */
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: auto;
+    min-height: 100vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-right: 4px solid #8e24aa; /* Updated border color */
+}
+
+.sidebar h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff; /* White background for content */
+}
+
+.game-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.game-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for readability */
+}
+
+input[type="number"] {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #8e24aa; /* Updated border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: calc(100% - 24px); /* Adjust for padding */
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8e24aa; /* Updated button color */
+    color: #fff;
+    width: calc(100% - 24px); /* Adjust for padding */
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #6a1b9a; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+#feedback {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #28a745; /* Green for positive feedback */
+}
+
+#attempts {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555; /* Darker color for attempts */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .game-container {
+        margin: 0; /* Remove margin on small screens */
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .assignment {
+        font-size: 18px;
+    }
+
+    .game-container {
+        padding: 15px;
+    }
+
+    input[type="number"], button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #feedback, #attempts {
+        font-size: 16px;
+    }
+}

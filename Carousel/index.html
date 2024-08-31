@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ShipGlobal</div>
+        <div class="assignment">Assignment 2</div>
+    </header>
+    <div class="body-container">
+        <aside class="sidebar">
+            <h1>Assignment 2</h1>
+            <p>Develop an image carousel component for a web application that displays a
+                series of images in a sliding format. The carousel should include functionality to navigate
+                through the images and handle cases where an image is not available by showing a fallback
+                image instead. This component should be built using HTML, CSS, and JavaScript.
+                </p>
+        </aside>
+        <main class="main-content">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="images">
+                        <img src="shipglobal1.png" alt="Image 1" onerror="this.src='fallback.png'">
+                        <img src="shipglobal2.jpg" alt="Image 2" onerror="this.src='fallback.png'">
+                        <img src="image3.jpg" alt="Image 3" onerror="this.src='fallback.png'">
+                    </div>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+                <div class="indicators">
+                    <!-- Dots will be generated here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

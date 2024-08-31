@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ShipGlobal</div>
+        <div class="assignment">Assignment 4</div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Assignment 4</h1>
+            <p>Create an interactive number guessing game that allows users to guess a
+                randomly generated number within a specified range. The game should provide feedback on
+                the user's guesses, track the number of attempts, and offer a way to restart the game. This
+                component should be built using HTML, CSS, and JavaScript.
+                </p>
+        </aside>
+        <main class="main-content">
+            <div class="game-container">
+                <p>Guess a number between 1 and 100</p>
+                <div class="main-container">
+                    <input type="number" id="guess-input" placeholder="Guess Number" min="1" max="100">
+                    <button id="submit-guess">Check</button>
+                </div>
+                <button id="restart-game" style="display: none;">Restart Game</button>
+                <p id="feedback"></p>
+                <p id="attempts">Attempts: 0</p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

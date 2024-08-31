@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">ShipGlobal</div>
+        <div class="assignment">Assignment 1</div>
+    </header>
+    <div class="body-container">
+        <aside class="sidebar">
+            <h1>Assignment 3</h1>
+            <p>Create an interactive todo list component for a web application where todos can
+                be categorised into four distinct status types: Backlog, To Do, Ongoing, and Done. Each
+                status will have its own card displaying a list of todos. Implement functionality to navigate
+                todos between these status categories using navigation buttons. The component should be
+                built using HTML, CSS, and JavaScript only
+                </p>
+        </aside>
+        <main class="main-content">
+            <div class="main-container">
+                <div class="todo-container">
+                    <div class="todo-card" id="backlog">
+                        <h2 class="textcenter">Backlog</h2>
+                        <ul class="todo-list" id="backlog-list"></ul>
+                        <div class="input-container">
+                            <input type="text" id="backlog-input" placeholder="Add a task...">
+                            <button class="task-btn" onclick="addTask('backlog')">Add</button>
+                        </div>
+                    </div>
+            
+                    <div class="todo-card" id="todo">
+                        <h2 class="textcenter">To Do</h2>
+                        <ul class="todo-list" id="todo-list"></ul>
+                        <div class="input-container">
+                            <input type="text" id="todo-input" placeholder="Add a task...">
+                            <button class="task-btn" onclick="addTask('todo')">Add</button>
+                        </div>
+                    </div>
+            
+                    <div class="todo-card" id="ongoing">
+                        <h2 class="textcenter">Ongoing</h2>
+                        <ul class="todo-list" id="ongoing-list"></ul>
+                        <div class="input-container">
+                            <input type="text" id="ongoing-input" placeholder="Add a task...">
+                            <button class="task-btn" onclick="addTask('ongoing')">Add</button>
+                        </div>
+                    </div>
+            
+                    <div class="todo-card" id="done">
+                        <h2 class="textcenter">Done</h2>
+                        <ul class="todo-list" id="done-list"></ul>
+                        <div class="input-container">
+                            <input type="text" id="done-input" placeholder="Add a task...">
+                            <button class="task-btn" onclick="addTask('done')">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

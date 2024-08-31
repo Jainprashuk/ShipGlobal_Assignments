@@ -1,0 +1,152 @@
+/* styles.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #6a1b9a, #8e24aa); /* Updated gradient */
+    color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.assignment {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.header .assignment::before {
+    content: "📚";
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.body-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background: #2c3e50; /* Darker sidebar color */
+    color: #ecf0f1; /* Light text color */
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: auto;
+    min-height: 100vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-right: 4px solid #8e24aa; /* Updated border color */
+}
+
+.sidebar h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff; /* White background for content */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.inner-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.indicators div {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicators .active {
+    background-color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .carousel {
+        width: 100%;
+    }
+}
